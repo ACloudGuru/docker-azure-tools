@@ -31,3 +31,6 @@ RUN apt-get install -y nodejs npm
 
 ## Install Azure PowerShell for .NET Core
 RUN pwsh -Command "& {Install-Module AzureRM.NetCore -Force -Confirm:\$False}"
+
+## Install PowerShell module for Visual Studio Team Services
+RUN pwsh -Command "& {Install-Module VSTeam -Force -Confirm:\$False}"
